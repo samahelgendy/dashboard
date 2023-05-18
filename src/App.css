@@ -1,0 +1,30 @@
+.App{
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+}
+section{
+  border-bottom: 1px solid rgba(32, 31, 31, 0.421)
+}
+.AppHeader{
+  display: flex;
+  align-items: center;
+  padding: 4px;
+  justify-content: space-between;
+  height: 50px;
+
+}
+.sideAndPage{
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+  background-color: #eee;
+}
+.PageContent{
+  padding-left: 20px;
+  margin-top: 30px;
+}
+.SideMenu ul{
+  height: 100vh;
+}
