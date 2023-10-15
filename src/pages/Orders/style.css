@@ -1,0 +1,79 @@
+.ant-steps {
+    width: calc(100vw - 300px);
+}
+.form-login{
+    margin-top: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+.input , .inputpass , .label , .btn-1{
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s; /* delay the animation for 3 seconds */
+    animation-fill-mode: forwards; /* keep the element visible after the animation ends */
+  }
+  .input {
+    transform:  rotateX(0);
+    animation-name: fadeIn;
+  }
+  
+   .inputpass{
+    transform:  rotateX(0);
+    animation-name: fadeOut;
+  }
+  .label{
+    transform: rotateY(0);
+    animation-name: fadetrans;
+    animation-delay: 2s !important;
+  }
+ .btn-1{
+    transform: rotateY(0);
+    animation-name: fadetransy;
+    animation-delay: 3s !important;
+  }
+  @keyframes fadeIn {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform:translateX(0);
+        opacity: 1;
+    }
+  }
+  @keyframes fadeOut {
+    from {
+        transform: translateX(100px);
+    }
+    to {
+        transform:translateX(0);
+        opacity: 1;
+    }
+  }
+  @keyframes fadetrans {
+    from {
+        transform: rotateY(100deg);
+    }
+    to {
+        transform: rotateY(0);
+        opacity: 1;
+        
+    }
+  }
+
+  @keyframes fadetransy {
+    from {
+        transform: rotateY(-100deg);
+    }
+    to {
+        transform: rotateY(0);
+        opacity: 1;
+        
+    }
+  }
+
+ 

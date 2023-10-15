@@ -1,0 +1,96 @@
+
+.App{
+  height: 100vh;
+  width: 100vw; 
+   display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+}
+.AppHeader{
+  display: flex;
+  align-items: center;
+  height: 55px;
+  box-shadow: 2px 2px 2px  rgba(128, 128, 128, 0.455);
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+.AppHeader .container{
+  display: flex;
+  justify-content: space-between;
+}
+
+.menuandpagecontent{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex: 1;
+  overflow-y: auto;
+  
+}
+ .ContentFooter{
+  border-top: 1px solid gray;
+ }
+.AppFooter{
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.ant-space-item{
+  margin-right: 20px;
+}
+
+.drawerbtn{
+   position: absolute;
+   z-index: 100;
+ left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  margin-top: 30px;
+  top:300px;
+}
+@media (max-width:768px) {
+  .HeaderMenu{
+   display: none;
+  }
+}
+.MenuIcon{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  background-color: #5915FC;
+  color: white;
+  padding: 20px;
+  border-radius: 50%;
+  z-index: 10;
+  box-shadow: 2px 2px 2px 2px #B9B3C7;
+  animation: up-bouncing 1.5s linear infinite;
+  transition: 0.3s;
+}
+
+@keyframes up-bouncing{
+  0%,10%,20%,50%,70%,90%{
+      transform: translateY(0)
+  }
+  40%,80%,100%{
+     transform: translateY(-20%)
+  }
+ }
+@media (min-width:768px) {
+  .MenuIcon{
+   display: none;
+  }
+}
+
+:where(.css-dev-only-do-not-override-txh9fw).ant-table-wrapper {
+  clear: both;
+  width: calc(100vw - 350px );
+}
+@media (max-width:500px) {
+  :where(.css-dev-only-do-not-override-txh9fw).ant-table-wrapper {
+    width: 100%;
+  }
+}
